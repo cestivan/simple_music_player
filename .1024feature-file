@@ -4,3 +4,4 @@ fileChangeLogs:
   - git_contributions.sh
   - CHANGELOG.md
   - .gitignore
+  - '.1024'
