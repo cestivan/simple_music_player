@@ -85,6 +85,8 @@ function resetValues() {
   seek_slider.value = 0;
 }
 
+let isMuted = false;
+
 // 加载播放列表中的第一首歌
 loadTrack(track_index);
 
@@ -92,6 +94,14 @@ loadTrack(track_index);
 function playpauseTrack() {
   if (!isPlaying) playTrack();
   else pauseTrack();
+}
+
+// 切换静音
+function toggleMute() {
+  isMuted = !isMuted;
+  curr_track.muted = isMuted;
+  const muteButton = document.getElementById('muteButton');
+  muteButton.classList.toggle('muted', isMuted);
 }
 
 // 播放当前曲目
