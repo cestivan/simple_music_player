@@ -5,3 +5,5 @@ fileChangeLogs:
   - CHANGELOG.md
   - .gitignore
   - '.1024'
+  - index.html
+  - style.css
